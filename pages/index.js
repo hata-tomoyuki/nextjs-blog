@@ -9,7 +9,6 @@ import Head from 'next/head'
 
 export async function getStaticProps() {
   const allPostsData = getPostsData();
-  console.log(allPostsData);
 
   return {
     props: {
@@ -25,7 +24,7 @@ export default function Home({ allPostsData }) {
         <title>{sitetitle}</title>
       </Head>
       <section>
-        <p className={utilStyle.headingMd}>Webデザイナー/Webエンジニア</p>
+        <p className={utilStyle.headingMd}>Webデザイナー/Webエンジニア です</p>
       </section>
 
       <section className={`${utilStyle.headingMd} ${utilStyle.padding1px}`}>
